@@ -1,6 +1,6 @@
 {
   "name": "${envName}",
-  "description": "mattermost",
+  "description": "wordpress",
   "version": "1.0.1",
   "author": "Sydyk",
   "containers": [
@@ -11,15 +11,15 @@
       "size": "${mysqlDBtype}"
     },
     {
-      "hostname": "mattermost",
-      "template": "ubuntu16",
+      "hostname": "wordpress",
+      "template": "wordpress@280dcda67a67d071970ff838d0331c33c0c04710",
       "peer-criteria": "HTTP-GROUP",
       "size": "${mattermostContainerType}",
       "port-mapping": [
         {
           "protocol": "HTTP",
           "domain": "${domain}",
-          "internal-port": "8065",
+          "internal-port": "80",
           "external-port": "80"
         }
       ]
@@ -50,7 +50,7 @@
       {
         "name": "mattermost",
         "hostnames": [
-          "mattermost"
+          "wordpress"
         ]
       }
     ]
