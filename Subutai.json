@@ -48,7 +48,7 @@
         ]
       },
       {
-        "name": "mattermost",
+        "name": "wordpress",
         "hostnames": [
           "wordpress"
         ]
