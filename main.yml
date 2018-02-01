@@ -5,7 +5,7 @@
     shell: systemctl stop apache2.service 
 
   - name: Copy wp-config.php.j2
-    template: src="wp-config.php.j2"   dest=" /var/www/html/wp-config.php"   mode=777
+    template: src="wp-config.php.j2"   dest="/var/www/html/wp-config.php"   mode=777
    
   - name: start apache
     shell: systemctl start apache2.service 
