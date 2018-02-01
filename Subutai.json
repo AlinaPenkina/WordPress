@@ -14,7 +14,7 @@
       "hostname": "wordpress",
       "template": "wordpress@280dcda67a67d071970ff838d0331c33c0c04710",
       "peer-criteria": "HTTP-GROUP",
-      "size": "${mattermostContainerType}",
+      "size": "${wordpressContainerType}",
       "port-mapping": [
         {
           "protocol": "HTTP",
@@ -59,7 +59,7 @@
     "domain": {
       "description": "Select your domain or create new one",
       "type": "domain",
-      "default": "mattermost.envs.subutai.cloud",
+      "default": "wordpress.envs.subutai.cloud",
       "validation": "[a-zA-Z0-9.-]+"
     },
     "mysqlDBtype": {
@@ -68,7 +68,7 @@
       "default": "SMALL",
       "validation": "LARGE,HUGE"
     },
-    "mattermostContainerType": {
+    "wordpressContainerType": {
       "description": "You can set LARGE,HUGE",
       "type": "enum",
       "default": "SMALL",
@@ -83,7 +83,7 @@
     "envName": {
       "description": "Enter your environment name",
       "type": "string",
-      "default": "mattermost env",
+      "default": "wordpress env",
       "validation": "[a-zA-Z0-9]+"
     }
   }
