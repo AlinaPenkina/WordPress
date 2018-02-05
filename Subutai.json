@@ -63,16 +63,16 @@
       "validation": "[a-zA-Z0-9.-]+"
     },
     "mysqlDBtype": {
-      "description": "You can set LARGE,HUGE",
+      "description": "You can set TINY,SMALL,MEDIUM,LARGE,HUGE",
       "type": "enum",
       "default": "SMALL",
-      "validation": "LARGE,HUGE"
+      "validation": "TINY,SMALL,MEDIUM,LARGE,HUGE"
     },
     "wordpressContainerType": {
-      "description": "You can set LARGE,HUGE",
+      "description": "You can set TINY,SMALL,MEDIUM,LARGE,HUGE",
       "type": "enum",
       "default": "SMALL",
-      "validation": "LARGE,HUGE"
+      "validation": "TINY,SMALL,MEDIUM,LARGE,HUGE"
     },
     "maxPeersPrice": {
       "description": "To search and find the best initial peers for you to select from, enter the maximum GoodWill / hour (GW/h) limit you might be willing to pay while running this application on rented peers? You can still select free peers, your peers, and others based on price before installing the application.",
